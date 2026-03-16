@@ -24,6 +24,18 @@ book4 = Book("Learning Python", "Mark Lutz", 5)
 # წიგნების სია
 books = [book1, book2, book3, book4]
 
+# მომხმარებლისგან მონაცემების მიღება
+title = input("Enter book title: ")
+author = input("Enter author: ")
+rating = int(input("Enter rating (1-5): "))
+
+
+# ახალი ობიექტის შექმნა
+new_book = Book(title, author, rating)
+
+# წიგნის დამატება სიაში
+books.append(new_book)
+
 print("Recommended books:\n")
 
 # რეკომენდებული წიგნების დაბეჭდვა
